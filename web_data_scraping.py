@@ -17,10 +17,10 @@ bs = BeautifulSoup(url, 'html.parser')
 paragraphs = bs.find_all('p')
 url_text = '\n'.join(bs.text for paragraph in paragraphs)
 
-# Input the question
-question = input('Enter your key word: ')
+# Input the heading
+question = 'Anatomy'
 
-# Print the data only after the word I write down
+# Print the data only 3 lines after the heading
 found_word = False
 lines_after_header = 3
 lines_printed = 0
